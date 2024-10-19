@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <input class="calc-screen" type="text" id="result" readonly  placeholder="0"/>
+        <div class="buttons">
+               <button value=" AC" onclick="clr()">AC</button>
+               <button value="%" onclick="operator('%')" class="operator">%</button>
+               <button value="/" onclick="operator('/')" class="operator">/</button>
+
+            
+               <button value="7" onclick="displayNum('7')">7</button>
+               <button value="8" onclick="displayNum('8')">8</button>
+               <button value="9" onclick="displayNum('9')">9</button>
+               <button value="x" onclick="operator('*')" class="operator">*</button>
+            
+                <button onclick="displayNum('4')">4</button>
+                <button  onclick="displayNum('5')">5</button>
+                <button  onclick="displayNum('6')">6</button>
+                <button  onclick="operator('-')">-</button>
+            
+                <button value="1" onclick="displayNum('1')">1</button>
+                <button value="2" onclick="displayNum('2')">2</button>
+                <button value="3" onclick="displayNum('3')">3</button>
+                <button value="+" onclick="operator('+')">+</button>
+               <button value="0" onclick="displayNum('0')">0</button>
+               <button value="00" onclick="displayNum('00')">00</button>
+               <button value="." onclick="displayNum('.')">.</button>
+              <button value="=" id="equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+   <script src="./assets/js/calc.js" ></script>
+</body>
+</html>
